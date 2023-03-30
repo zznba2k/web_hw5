@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		title:{
+			text: "2330 K線走勢圖",
+			fontFamily: "times new roman"
+		},
+		zoomEnabled: true,
+		exportEnabled: true,
+		axisY: {
+			includeZero:false,
+			title: "股價",
+			prefix: ""
+		},
+		axisX: {
+			interval:4,
+			intervalType: "day",
+			valueFormatString: "MM-DD",
+			labelAngle: 0
+		},
+		data: [
+		{
+			type: "candlestick",
+			dataPoints: [
+				{x: new Date(2023,2,29),y:[533,533,525,530]},
+				{x: new Date(2023,2,28),y:[525,530,524,525]},
+				{x: new Date(2023,2,27),y:[533,536,531,531]},
+				{x: new Date(2023,2,24),y:[536,539,535,539]},
+				{x: new Date(2023,2,23),y:[528,539,528,538]},
+				{x: new Date(2023,2,22),y:[524,533,524,533]},
+				{x: new Date(2023,2,21),y:[515,517,512,517]},
+				{x: new Date(2023,2,20),y:[517,518,510,512]},
+				{x: new Date(2023,2,17),y:[516,518,513,518]},
+				{x: new Date(2023,2,16),y:[505,510,504,505]},
+				{x: new Date(2023,2,15),y:[515,516,510,511]},
+				{x: new Date(2023,2,14),y:[511,514,510,510]},
+				{x: new Date(2023,2,13),y:[513,518,509,516]},
+				{x: new Date(2023,2,10),y:[515,516,511,513]},
+				{x: new Date(2023,2,09),y:[525,526,522,522]},
+				{x: new Date(2023,2,08),y:[521,523,518,521]},
+				{x: new Date(2023,2,07),y:[521,526,519,524]},
+				{x: new Date(2023,2,06),y:[520,524,517,521]},
+				{x: new Date(2023,2,03),y:[524,525,516,516]},
+				{x: new Date(2023,2,02),y:[519,520,515,519]},
+				{x: new Date(2023,1,24),y:[524,525,511,511]},
+				{x: new Date(2023,1,23),y:[512,521,510,518]},
+				{x: new Date(2023,1,22),y:[506,509,505,507]},
+				{x: new Date(2023,1,21),y:[515,517,513,516]},
+				{x: new Date(2023,1,20),y:[514,519,511,517]},
+				{x: new Date(2023,1,17),y:[524,524,516,518]},
+				{x: new Date(2023,1,16),y:[528,531,524,528]},
+				{x: new Date(2023,1,15),y:[526,532,522,525]},
+				{x: new Date(2023,1,14),y:[544,546,543,545]},
+				{x: new Date(2023,1,13),y:[544,544,538,541]},
+				{x: new Date(2023,1,10),y:[544,546,541,545]},
+				{x: new Date(2023,1,09),y:[540,540,536,540]},
+				{x: new Date(2023,1,08),y:[538,540,534,540]},
+				{x: new Date(2023,1,07),y:[524,528,522,523]},
+				{x: new Date(2023,1,06),y:[532,533,526,526]},
+				{x: new Date(2023,1,03),y:[540,542,536,542]},
+				{x: new Date(2023,1,02),y:[538,542,537,540]},
+				{x: new Date(2023,1,01),y:[532,533,522,530]},
+				{x: new Date(2023,0,31),y:[537,538,521,522]},
+				{x: new Date(2023,0,30),y:[542,543,534,543]},
+				{x: new Date(2023,0,17),y:[504,504,499.5,503]},
+				{x: new Date(2023,0,16),y:[506,508,503,505]},
+				{x: new Date(2023,0,13),y:[507,509,499,500]},
+				{x: new Date(2023,0,12),y:[487.5,488,484,486.5]},
+				{x: new Date(2023,0,11),y:[487,488,482,484.5]},
+				{x: new Date(2023,0,10),y:[486,487,483,486]},
+				{x: new Date(2023,0,09),y:[468,481,467.5,481]},
+				{x: new Date(2023,0,06),y:[455,459.5,455,458.5]},
+				{x: new Date(2023,0,05),y:[459,459.5,455,458.5]},
+				{x: new Date(2023,0,04),y:[449.5,455,448.5,449.5]},
+				{x: new Date(2023,0,03),y:[446,453.5,443,453]}
+
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 97%;">
+</div>
+</body>
+</html>
